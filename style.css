@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: url("images/bgi.png");
+  background-position: center;
+  block-size: cover;
+}
+body .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(17px);
+          backdrop-filter: blur(17px);
+  --webkit-backdrop-filter: blur(17px);
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  transition: width 0.3s ease;
+}
+body .sidebar .logo {
+  display: flex;
+  align-items: center;
+  padding: 25px 10px 15px;
+}
+body .sidebar .logo img {
+  width: 80px;
+  border-radius: 50%;
+}
+body .sidebar .logo h2 {
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-left: 15px;
+  display: none;
+}
+body .sidebar .links {
+  height: calc(100% - 140px);
+  overflow-y: auto;
+  scrollbar-width: none;
+  list-style: none;
+  margin-top: 20px;
+}
+body .sidebar .links h4 {
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: none;
+}
+body .sidebar .links li {
+  display: flex;
+  align-items: center;
+}
+body .sidebar .links li span {
+  padding: 12px 10px;
+}
+body .sidebar .links li a {
+  color: #9c8686;
+  padding: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+  display: none;
+}
+body .sidebar .links li:hover {
+  border-radius: 3px;
+  cursor: pointer;
+  background: #fff;
+}
+body .sidebar .links hr {
+  border-color: #4c4c4c;
+  margin: 10px 8px;
+}
+body .sidebar:hover {
+  width: 260px;
+}
+body .sidebar:hover .logo h2 {
+  display: block;
+}
+body .sidebar:hover .links h4 {
+  display: block;
+}
+body .sidebar:hover .links li a {
+  display: block;
+}
+body .sidebar:hover .links hr {
+  border-color: transparent;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
